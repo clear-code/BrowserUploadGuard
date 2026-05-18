@@ -7,7 +7,7 @@ function buildCancelResponse(path, isMainFrame) {
     alert(${message});
     ${afterAction}
   </script>`;
-  return { redirectUrl: `data:text/html,${encodeURIComponent(html)}` };
+  return { redirectUrl: `data:text/html;charset=utf-8,${encodeURIComponent(html)}` };
 }
 
 function isBlocked(file) {
